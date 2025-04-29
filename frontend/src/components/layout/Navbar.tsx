@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const subPages = [
   {
-    name: "서브페이지1",
+    name: "소개",
     path: "/subpage1",
   },
   {
-    name: "서브페이지2",
+    name: "솔루션",
     path: "/subpage2",
   },
   {
@@ -18,17 +18,21 @@ const subPages = [
     path: "/subpage4",
   },
   {
-    name: "서브페이지5",
+    name: "커뮤니티",
     path: "/subpage5",
   },
 ];
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-8 py-4">
-      <div className="flex gap-4">
+      <div className="w-full flex gap-4">
         {subPages.map((page) => {
           return (
-            <Link to={page.path} key={page.name} className="text-base font-bold text-gray-500">
+            <Link
+              to={page.path}
+              key={page.name}
+              className="text-base font-bold text-gray-500"
+            >
               {page.name}
             </Link>
           )
