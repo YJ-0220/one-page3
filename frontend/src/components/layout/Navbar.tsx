@@ -2,36 +2,24 @@ import { Link } from "react-router-dom";
 
 const subPages = [
   {
-    name: "소개",
-    path: "/subpage1",
+    name: "ABOUT",
+    path: "/about",
   },
   {
-    name: "솔루션",
-    path: "/subpage2",
-  },
-  {
-    name: "서브페이지3",
-    path: "/subpage3",
-  },
-  {
-    name: "서브페이지4",
-    path: "/subpage4",
-  },
-  {
-    name: "커뮤니티",
-    path: "/subpage5",
+    name: "NEWS",
+    path: "/news",
   },
 ];
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-8 py-4">
-      <div className="w-full flex gap-4">
+    <nav className="flex justify-between items-center">
+      <div className="flex gap-12">
         {subPages.map((page) => {
           return (
             <Link
               to={page.path}
               key={page.name}
-              className="text-base font-bold text-gray-500"
+              className="text-base font-bold text-black"
             >
               {page.name}
             </Link>

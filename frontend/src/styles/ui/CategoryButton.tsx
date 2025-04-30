@@ -4,13 +4,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "success" | "danger";
 }
 
-export default function Button({
+export default function CategoryButton({
   children,
   variant = "primary",
   className,
   ...props
 }: ButtonProps) {
-  const baseStyle = "rounded-md bg-blue-500 text-white px-4 py-2";
+  const baseStyle = "rounded-full bg-blue-500 text-white px-4 py-2"; 
   const variants = {
     primary: "bg-blue-500",
     secondary: "bg-gray-500",

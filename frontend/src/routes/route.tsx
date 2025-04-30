@@ -1,32 +1,18 @@
 import Layout from "@/components/layout/Layout";
 import Home from "@/pages/Home";
+import Login from "@/pages/Login";
+import About from "@/pages/subpages/About";
+import News from "@/pages/subpages/News";
 import NotFound from "@/pages/NotFound";
-import Subpage1 from "@/pages/subpages/subpage1";
-import Subpage2 from "@/pages/subpages/subpage2";
-import Subpage3 from "@/pages/subpages/subpage3";
-import Subpage4 from "@/pages/subpages/subpage4";
-import Subpage5 from "@/pages/subpages/subpage5";
 
 const subpages = [
   {
-    path: "subpage1",
-    element: <Subpage1 />,
+    path: "about",
+    element: <About />,
   },
   {
-    path: "subpage2",
-    element: <Subpage2 />,
-  },
-  {
-    path: "subpage3",
-    element: <Subpage3 />,
-  },
-  {
-    path: "subpage4",
-    element: <Subpage4 />,
-  },
-  {
-    path: "subpage5",
-    element: <Subpage5 />,
+    path: "news",
+    element: <News />,
   },
 ];
 
@@ -56,10 +42,10 @@ export const routes = [
       },
     ],
   },
-  // {
-  //   path: "/login",
-  //   element: <Login />,
-  // },
+  {
+    path: "/login",
+    element: <Login />,
+  },
   {
     path: "*",
     element: <NotFound />,
