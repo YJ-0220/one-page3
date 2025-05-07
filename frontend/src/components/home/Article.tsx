@@ -1,12 +1,25 @@
 import { useState } from "react";
 
-export default function Article() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const articles = Array(9).fill({
-    title: "기사 제목을 입력하세요.",
+const articles = [
+  {
+    title: "제목 1",
     date: "2025 / 04.25",
     content: "일반 설명입니다. MEDIC 설명입니다 일반적인 설명입니다. 보다 나은 자격을 갖추었으므로 고객님에게 가까이 다가 고객님에게 제안드리며 자세히 먼저 자세히 안내해..."
-  });
+  },
+  {
+    title: "제목 2",
+    date: "2025 / 04.25",
+    content: "일반 설명입니다. MEDIC 설명입니다 일반적인 설명입니다. 보다 나은 자격을 갖추었으므로 고객님에게 가까이 다가 고객님에게 제안드리며 자세히 먼저 자세히 안내해..."
+  },
+  {
+    title: "제목 3",
+    date: "2025 / 04.25",
+    content: "일반 설명입니다. MEDIC 설명입니다 일반적인 설명입니다. 보다 나은 자격을 갖추었으므로 고객님에게 가까이 다가 고객님에게 제안드리며 자세히 먼저 자세히 안내해..."
+  }
+]
+
+export default function Article() {
+  const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = 7;
 
