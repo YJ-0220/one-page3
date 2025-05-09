@@ -4,6 +4,7 @@ import Login from "@/pages/Login";
 import About from "@/pages/subpages/About";
 import News from "@/pages/subpages/News";
 import NotFound from "@/pages/NotFound";
+import Admin from "@/pages/Admin";
 
 const subpages = [
   {
@@ -45,6 +46,16 @@ export const routes = [
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+    children: [
+      {
+        index: true,
+        element: <Admin />,
+      },
+    ],
   },
   {
     path: "*",
