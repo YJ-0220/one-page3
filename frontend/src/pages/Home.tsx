@@ -1,12 +1,9 @@
-import Introduce from "@/components/home/Introduce";
-import Advertisement from "@/components/home/Advertisement";
-import Article from "@/components/home/Article";
+import "@/styles/styles.css";
+
 export default function Home() {
   return (
-    <div>
-      <Introduce />
-      <Advertisement />
-      <Article />
+    <div className="flex flex-col items-center h-screen">
+      <p className="spin font-bold mt-10">이미지</p>
     </div>
   );
 }
